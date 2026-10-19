@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: 413745378153.dkr.ecr.ap-south-1.amazonaws.com/my-docker-repo:10
+          image: 413745378153.dkr.ecr.ap-south-1.amazonaws.com/my-docker-repo:11
           ports:
             - containerPort: 80
 
