@@ -36,7 +36,7 @@ resource "aws_eks_node_group" "main" {
 
 # Create a new IAM Role
 resource "aws_iam_role" "eks_nodes" {
-  name               = "eks-nodes-role"
+  name               = "eks-nodes-role-new"
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
     Statement = [
