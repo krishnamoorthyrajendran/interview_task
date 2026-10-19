@@ -26,7 +26,7 @@ jobs:
           aws-region: ap-south-1
 
       - name: Terraform destory
-        run: terraform destory -auto-approve
+        run: terraform destroy -auto-approve
 
       - name: Login to Amazon ECR
         id: login-ecr
