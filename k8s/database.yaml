@@ -37,17 +37,6 @@ spec:
                   name: database-secret
                   key: POSTGRES_PASSWORD
 
-          # Mount EBS-backed persistent storage
-          volumeMounts:
-            - name: database-storage
-              mountPath: /var/lib/postgresql/data
-
-      # Reference the PersistentVolumeClaim
-      volumes:
-        - name: database-storage
-          persistentVolumeClaim:
-            claimName: database-pvc
-
 ---
 apiVersion: v1
 kind: Service
@@ -60,4 +49,4 @@ spec:
     app: database
   ports:
     - port: 5432
-      targetPort: 5432
+      targetPort: 5432              
